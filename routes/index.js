@@ -1,7 +1,8 @@
-const todosRoute = require("./todosRoute");
-
+const userRoute = require("./userRoute");
+const companyRoute = require("./companyRoute");
 const mountRoutes = (app) => {
-  app.use("/todos", todosRoute);
+  app.use("/user", userRoute);
+  app.use("/company", companyRoute);
 };
 
 module.exports = mountRoutes;
